@@ -7,6 +7,9 @@ import com.ecp.sio.paintOP.Modele.Rectangle;
 import com.ecp.sio.paintOP.Modele.Circle;
 import com.ecp.sio.paintOP.Modele.Shape;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class PaintOP {
 
     // premiere classe par défaut = public
@@ -68,6 +71,7 @@ public class PaintOP {
         Shape shape = new Rectangle(10, 20, 200, 100);
         System.out.println(shape.toString());
 
+        System.out.println(shape.getArea());
 
         boolean test = rect1.equals(rect2);
 
@@ -78,8 +82,31 @@ public class PaintOP {
         // on doit préciser les parametres car on a utilisé un constructeur dans la classe
         System.out.println(circ.toString());
 
+        int[] table1 = new int[3];
+        // int [] table2 = new int { 1, 2, 3 };
+        int [] table3 = {1, 2, 3 };
 
-        //
+
+        // les tableaux ont une taille fixe, à utiliser quand on sait ce qu'ol y a dedans, sinon créer des objects
+
+        List<String> list = new ArrayList<String>; // List est une interface soit une liste de méthode, non instanciable, il faut arraylist
+        list.add("toto");
+        // list.add(rect1); ne peut prendre que des string
+
+        list.remove(0);
+        list.get(0);// donne l'objet de la liste au point 0
+
+        String str = list.get(0);
+        // Rectangle r = (Rectangle) list.get(0);
+
+        //list est une classe générique qui prends un paramètre quand on l'instancie <> = parametre générique
+
+        String[] strings = {"Hello", "World"};
+        String str = strings[0];
+
+        for (String s : strings) { // on définit une variable temporaire s
+
+        }
 
     }
 }

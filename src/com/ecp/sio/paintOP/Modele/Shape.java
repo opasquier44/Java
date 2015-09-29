@@ -3,7 +3,7 @@ package com.ecp.sio.paintOP.Modele;
 /**
  * Created by olivierpasquier on 28/09/15.
  */
-public class Shape {
+public abstract class Shape {
 
     private int x, y ; // on définit la visibilité - private serait visible uniquement dans le meme package
                     // encapsulation : utiliser le moins possible 'public'
@@ -45,6 +45,7 @@ public class Shape {
 
     }
 
+    public abstract double getArea();
 
 }
 

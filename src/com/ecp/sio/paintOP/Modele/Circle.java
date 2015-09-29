@@ -26,4 +26,9 @@ public class Circle extends Shape {
             "rayon=" + radius +
                 '}';
     }
+
+    @Override
+    public double getArea() {
+        return Math.pow(radius, 2) * Math.PI;
+    }
 }

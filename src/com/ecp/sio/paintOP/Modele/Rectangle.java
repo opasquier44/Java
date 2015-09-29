@@ -13,6 +13,8 @@ public class Rectangle extends Shape {
         this.height = height;
     }
 
+
+
     /*public Rectangle(int x; int y; int width, int height) {
         super (x, y); // on fait appel au constructeur parent, doit être sur la premiere ligne
         this.width = width;
@@ -63,6 +65,12 @@ public class Rectangle extends Shape {
                 }
         return false;
         }
+
+    @Override
+    public double getArea() {
+
+        return width * height;
+    }
 
     }
 
